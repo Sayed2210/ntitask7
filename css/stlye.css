@@ -7,6 +7,12 @@
     font-family: satisfy;
     src: url(../webfonts/satisfy.woff);
 }
+:root {
+    --main-color: #7ab62f;
+    --white-color: #fff;
+    --grey-color: #f3f3f3;
+    --section-padding: 50px;
+}
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -177,4 +183,102 @@ html {
 }
 .btn i {
     margin-right: 5px;
+}
+/*about  us section*/
+.about-us {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    background-color: var(--grey-color);
+}
+.about-us .container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+@media (max-width: 768px) {
+    .about-us .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-us .container img {
+        margin-bottom: 25px;
+        width: 100%;
+    }
+    .about-us .container .text {
+        width: 100%;
+    }
+}
+.about-us .container img{
+    width: 35%;
+    padding: 5px;
+    background-color: #fff;
+    border: 1px solid #79b72e;
+}
+.about-us .container .text {
+    width: 58%;
+}
+@media (max-width: 768px) {
+    .about-us .container img {
+        margin-bottom: 35px;
+        width: 100%;
+    }
+    .about-us .container .text {
+        width: 100%;
+    }
+}
+.title {
+    border-left: 5px solid var(--main-color);
+    padding: 0 25px;
+    margin-bottom: 35px;
+}
+@media (max-width: 768px) {
+    .title {
+        text-align: left;
+    }
+}
+.title > h4 {
+    color: #79b72e;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+.title > h2 {
+    text-transform: capitalize;
+    font-size: 2.3rem;
+}
+.about-us .container .text p {
+    color: #7a7a7a;
+    line-height: 1.4;
+}
+.about-us .container .text > p {
+    margin-bottom: 25px;
+}
+.about-us .text .info {
+    padding: 25px;
+    border: 2px solid #fff;
+}
+.about-us .text .links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.about-us .text .links a.active{
+    background-color: #fff;
+}
+.about-us .text .links a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    padding: 10px 15px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    color: #7ab62f;
 }
