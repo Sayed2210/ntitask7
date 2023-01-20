@@ -170,9 +170,14 @@ html {
     text-decoration: none;
     padding: 15px 25px;
     background-color: #fff;
-    border-radius: 16px;
+    font-weight: 600;
     color: #79b72e;
     margin-right: 25px;
+    -webkit-border-radius: 26px;
+    -moz-border-radius: 26px;
+    -ms-border-radius: 26px;
+    -o-border-radius: 26px;
+    border-radius: 26px;
 }
 @media (max-width: 767px) {
     .btn {
@@ -281,4 +286,103 @@ html {
     border-radius: 10px;
     text-transform: uppercase;
     color: #7ab62f;
+}
+/*service*/
+.service {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    background-color: var(--grey-color);
+}
+.service .title {
+    max-width: 500px;
+}
+.service .content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+    gap: 20px;
+}
+.service .content .box {
+    background-color: #fff;
+    display: flex;
+    padding: 15px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 10px;
+}
+@media (max-width: 767px) {
+    .service .content .box {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+.service .content .box i {
+    font-size: 4.5rem;
+    color: #7a7a7a;
+    margin-right: 15px;
+}
+@media (max-width: 767px) {
+    .service .content .box  i{
+        margin-bottom: 15px;
+    }
+}
+.service .content .box h3 {
+    font-weight: lighter;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+.service .content .box p {
+    color: #7a7a7a;
+    line-height: 1.4;
+    text-align: justify;
+    word-spacing: 4px;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+.service .content .box a {
+    display: flex;
+    justify-content: end;
+    color: #79b72e;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+/*offers*/
+.offers {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    background-image: url(../img/Banner-2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.offers .title {
+    border-color: #000;
+}
+.offers .title h4 {
+    color: #000;
+}
+.offers p {
+    max-width: 600px;
+    line-height: 1.4;
+    margin-bottom: 50px;
+    text-align: justify;
+}
+@media (max-width: 990px) {
+    .offers p {
+       text-align: center;
+       width: 100%;
+       margin-left: auto;
+       margin-right: auto;
+    }
+}
+.offers a {
+    background-color: #000;
+    color: #fff;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
 }
