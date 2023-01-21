@@ -470,4 +470,92 @@ html {
 .plans .feat .btn.black {
     background-color: #000;
 }
-
+/*.articles*/
+.articles {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    background-color: #fff;
+}
+.articles .content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(500px,1fr));
+    gap: 20px;
+}
+.articles .content .box {
+    display: flex;
+    background-color: #fff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #f3f3f3;
+    padding: 5px;
+}
+@media (max-width: 500px) {
+    .articles .content .box {
+        flex-direction: column;
+        text-align: center;
+    }
+    .articles .content .box img {
+        width: 100%;
+    }
+}
+.articles .content .box img {
+    width: 40%;
+}
+@media (max-width: 500px) {
+    .articles .content .box img {
+        width: 100%;
+    }
+}
+.articles .content .box .info {
+    background-color: #f3f3f3;
+    padding: 15px;
+}
+.articles .content .box .info .head {
+    border-bottom: 1px dotted #7ab62f;
+    padding-bottom: 10px;
+    color: #79b72e;
+    margin-bottom: 15px;
+}
+.articles .content .box .info .head i {
+    margin-right: 5px;
+}
+.articles .content .box .info .head span {
+    margin-right: 10px;
+}
+.articles .info h3 {
+    max-width: 320px;
+    margin-bottom: 10px;
+}
+@media (max-width: 500px) {
+    .articles .content .box .info h3{
+       max-width: 100%;
+    }
+}
+.articles .info p {
+    color: #777;
+    line-height: 1.4;
+    text-align: justify;
+    margin-bottom: 20px;
+    word-spacing: -1px;
+}
+.articles .info a {
+    text-decoration: none;
+    float: right;
+    color: #7ab62f;
+    border: 1px solid #7ab630;
+    padding: 5px 10px;
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;
+    -ms-border-radius: 18px;
+    -o-border-radius: 18px;
+    border-radius: 18px;
+}
+@media (max-width: 500px) {
+    .articles  .info a{
+       text-align: center;
+       float: none;
+    }
+}
