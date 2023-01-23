@@ -14,7 +14,7 @@
     --section-padding: 50px;
 }
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 img {
     max-width: 100%;
@@ -328,7 +328,7 @@ html {
     }
 }
 .service .content .box h3 {
-    font-weight: lighter;
+    font-weight: 400;
     text-transform: capitalize;
     margin-bottom: 10px;
     font-size: 1rem;
@@ -397,6 +397,9 @@ html {
     grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
     margin-bottom: 50px;
     gap: 20px;
+}
+.plan .title {
+    max-width: 550px;
 }
 .plans .feat {
     background-color: #f3f3f3;
@@ -627,6 +630,7 @@ html {
     font-weight: 900;
     position: absolute;
     left: 0;
+    top: 3px;
     border: 1px solid #79b72e;
     color: #79b72e;
     -webkit-border-radius: 50%;
@@ -635,8 +639,8 @@ html {
     -o-border-radius: 50%;
     border-radius: 50%;
     font-size: 0.7rem;
-    height: 14px;
-    width: 14px;
+    height: 15px;
+    width: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -682,7 +686,8 @@ html {
 .footer .foot a {
     text-decoration: none;
     color: #777;
-    padding: 0 5px;
+    padding: 0 15px;
+    margin-right: 5px;
 }
 .footer .foot a:not(:last-of-type) {
     border-right: 2px solid #777;
